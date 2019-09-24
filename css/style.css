@@ -1,9 +1,15 @@
-@font-face {
 
-  font-family: dfds-light;
-  src: url(fonts/dfds-light.ttf);
-  font-family: dfds-bold;
-  src: url(fonts/dfds-bold.ttf);
+
+@font-face {
+  font-family: DFDS;
+  src: url(fonts/DFDS-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DFDS;
+  src: url(fonts/dfds_light.ttf);
+  font-weight: normal;
 }
 
 html{
@@ -12,8 +18,10 @@ html{
 
 body{
   font-size: 1em;
-  font-family: dfds-light,"Segoe UI";
+  font-family: DFDS,"Segoe UI";
+  font-weight: normal;
   background-color: #eaedee;
+  margin: 0;
 }
 
 /* Header */
@@ -22,43 +30,78 @@ header{
   width: 100vw;
   margin-bottom: 0;
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 0.5fr;
   grid-template-rows: 1fr 0.5fr;
 }
 
-header > #logo{
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
-}
-
 #logo{
-  height: 4em;
+  height: 2em;
   padding: 1em;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   display: flex;
-  margin-right: auto;
 }
 
 #logo img{
-  width: 5em;
+  width: 3em;
+
 }
 
 h1{
   color: #003251;
-  font-size: 1.7em;
-  font-family: dfds-bold;
+  font-size: 1.4em;
+  margin: 0;
+  font-family: DFDS;
+  font-weight: bold;
+  align-self: center;
 }
 
 form{
-  grid-column: 2 / 4;
+  grid-column: 2 / 3;
   grid-row: 1 / 2;
   align-self: center;
+  justify-self: center;
 }
+
+input[name="search"]{
+  width: 6em;
+  background-image: url('../img/SearchIcon.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 1em;
+  transition: all .3s;
+  border-color: #005184;
+  border-style: solid;
+  border-width: 1.5px;
+  padding: 0.4em;
+  border-radius: 3px;
+}
+
+input[name="search"]:hover{
+  border-color: #f6861f;
+  transition: all .3s;
+}
+
+input[name="search"]:focus{
+  background-position-x: 120%;
+  width: 7em;
+  border-color: #f6861f;
+  transition: all .3s;
+}
+
 
 header > a{
   grid-column: 3 / 4;
   grid-row: 1 / 2;
-  justify-self: right;
+  justify-self: left;
   align-self: center;
+}
+
+header > a:hover{
+  color: #f6861f;
+  font-size: 1.1em;
+  transition: all .2s;
+
 }
 
 
@@ -76,7 +119,8 @@ nav{
 
 ul{
   list-style-type: none;
-  font-family: dfds-bold;
+  font-family: DFDS;
+  font-weight: bold;
   font-size: 1.3em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -131,11 +175,15 @@ li:nth-of-type(6){
 
 /* Main */
 h2{
-  font-family: dfds-bold;
+  font-family: DFDS;
+  font-weight: bold;
   color: #003251;
   font-size: 2.5em;
   grid-column-start: 1;
   padding-left: 1rem;
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  align-self: center;
 }
 
 
@@ -145,12 +193,15 @@ h2{
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-row-gap: 1em;
+  margin-bottom: 2em;
 }
 
 
 /* Los verhaal */
 article{
-  width: 80vh;
+  width: 50vh;
+  height: 30vh;
+  overflow: hidden;
   grid-column: 1;
   justify-self: center;
 }
@@ -158,15 +209,17 @@ article{
 article > a{
   display: grid;
   grid-template-columns: 3fr 2fr;
-  padding-left: 0.8em;
 }
 
 article footer{
+  height: 30vh;
   background-color: rgba(243, 222, 118, 0.6);
   clip-path: polygon(60% 0, 100% 0, 100% 100%, 0% 100%);
   grid-column: 2/3;
+  grid-row: 1/2;
+  z-index: 0;
   display: grid;
-  grid-template-rows: 2.5fr 1fr 1fr 1fr;
+  grid-template-rows: 3fr 0.75fr 0.75fr 0.75fr;
 }
 
 /* Schuine vierkant */
@@ -181,23 +234,35 @@ article footer{
 }
 
 /* Inhoud los verhaal */
+img{
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  width: 100%;
+}
+
 h4{
   color: black;
   text-transform: uppercase;
   background-color: rgba(243, 222, 118, 0.6);
-  clip-path: polygon(0 0, 30% 0%, 22% 13%, 0% 13%);;
+  clip-path: polygon(0 0, 40% 0%, 30% 13%, 0% 13%);;
   grid-column: 1 / 2;
+  grid-row: 1 /2;
   margin: 0em 0;
+  padding: 0.9em 0 0 0.6em;
 }
 
+
 p{
-  font-family: dfds-bold;
+  font-family: DFDS;
+  font-weight: normal;
   font-size: 1em;
 }
 
 footer > p{
   text-align: right;
+  align-self: center;
   padding-right: 0.8em;
+  margin: 0.2em 0;
 }
 
 
@@ -211,4 +276,48 @@ article a footer p:nth-of-type(2) {
 
 article a footer p:nth-of-type(3) {
   grid-row: 4 / 5;
+}
+
+@media (max-width: 380px) {
+  article{
+    width: 80vw;
+    height: 21vh;
+  }
+
+  article footer{
+    height: 21vh;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .verhalen{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2em;
+  }
+
+  article{
+    width: 40vw;
+  }
+
+  article:nth-of-type(1n){
+    grid-column: 1/2;
+    justify-self: right;
+  }
+
+  article:nth-of-type(2n){
+    grid-column: 2/3;
+    justify-self: left;
+  }
+
+  article a img{
+    height: 30vh;
+  }
+
+  h4{
+    padding: 0.4em 0 0 0.4em;
+  }
+
 }
