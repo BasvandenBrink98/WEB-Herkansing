@@ -20,123 +20,149 @@
         <nav>
             <ul>
                 <li>
-                    <img src="">
+                    <a href="">
+                      <img src="img/VerhaalIconOranje.svg" alt="verhaal icoon">
+                    </a>
                 </li>
                 <li>
-                    <a href="index.html">Verhalen</a>
+                    <a class="thisPage" href="index.html">Verhalen</a>
                 </li>
                 <li>
-                    <img src="">
+                    <a href="">
+                      <img src="img/FavorietIconBlauw.svg" alt="favoriet icoon">
+                    </a>
                 </li>
                 <li>
                     <a href="">Favorieten</a>
                 </li>
                 <li>
-                    <img src="">
+                    <a href="">
+                      <img src="img/ProfielIconBlauw.svg" alt="profiel icoon">
+                    </a>
                 </li>
                 <li>
                     <a href="">Profiel</a>
                 </li>
             </ul>
         </nav>
-        <section id="filteren">
-          <!-- <a>
-              <img id="filterButton" src="img/FilterIcon.png">
-          </a>
-          <form id="filterLaag">
-              <fieldset>
-                  <label for="losseVerhalen">Losse verhalen</label>
-                  <input id="losseVerhalen" type="checkbox">
-                  <label for="bundels">Bundels</label>
-                  <input id="bundels" type="checkbox">
-              </fieldset>
-              <fieldset>
-                  <legend>
-                      Thema's
-                  </legend>
-                  <label for="roman">Roman</label>
-                  <input id="roman" type="checkbox">
-                  <label for="biografisch">Biografisch</label>
-                  <input id="biografisch" type="checkbox">
-                  <label for="jeugd">Jeugd</label>
-                  <input id="jeugd" type="checkbox">
-                  <label for="thriller">Thriller</label>
-                  <input id="thriller" type="checkbox">
-                  <label for="avontuur">Avontuur</label>
-                  <input id="avontuur" type="checkbox">
-                  <label for="fantasie">Fantasie</label>
-                  <input id="fantasie" type="checkbox">
-                  <label for="humor">Humor</label>
-                  <input id="humor" type="checkbox">
-                  <label for="concept">Concept</label>
-                  <input id="concept" type="checkbox">
-              </fieldset>
-              <fieldset>
-                  <legend>Leestijd</legend>
-                  <label id="leestijdSlider">Aantal minuten</label>
-                  <input id="leestijdSleder" type="range" min="1" max="8">
-              </fieldset>
-              <button>Bekijk resultaten</button>
-          </form> -->
-        </section>
     </header>
     <main>
+      <section id="filteren">
+        <button id="filterBtn">filteren</button>
+        <form id="filterForm">
+            <fieldset>
+                <label for="losseVerhalen">Losse verhalen</label>
+                <input id="losseVerhalen" type="checkbox">
+                <label for="bundels">Bundels</label>
+                <input id="bundels" type="checkbox">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Thema's
+                </legend>
+                <label for="roman">Roman</label>
+                <input id="roman" type="checkbox">
+                <label for="biografisch">Biografisch</label>
+                <input id="biografisch" type="checkbox">
+                <label for="jeugd">Jeugd</label>
+                <input id="jeugd" type="checkbox">
+                <label for="thriller">Thriller</label>
+                <input id="thriller" type="checkbox">
+                <label for="avontuur">Avontuur</label>
+                <input id="avontuur" type="checkbox">
+                <label for="fantasie">Fantasie</label>
+                <input id="fantasie" type="checkbox">
+                <label for="humor">Humor</label>
+                <input id="humor" type="checkbox">
+                <label for="concept">Concept</label>
+                <input id="concept" type="checkbox">
+            </fieldset>
+            <fieldset>
+                <legend>Leestijd</legend>
+                <label id="leestijdSlider">Aantal minuten</label>
+                <input id="leestijdSleder" type="range" min="1" max="8">
+            </fieldset>
+            <button>Bekijk resultaten</button>
+        </form>
+      </section>
       <section class="verhalen">
           <h2>Losse verhalen</h2>
-            <article>
-                <a>
-                  <img src="img/Thumbnail_Ahlzheimer.png" alt="alzheimer-afbeelding">
-                  <h4>Thema</h4>
-                  <footer>
-                      <p>Alzheimer</p>
-                      <p>Max J. Molovich</p>
-                      <p>Beoordeling</p>
-                  </footer>
-                </a>
-            </article>
-            <article>
-                <a>
-                  <img src="img/Thumbnail_Verliefd.jpeg" alt="alzheimer-afbeelding">
-                  <h4>Thema</h4>
-                  <footer>
-                      <p>Titel</p>
-                      <p>Auteur</p>
-                      <p>Beoordeling</p>
-                  </footer>
-                </a>
-            </article>
-            <article>
-                <a>
-                  <img src="img/Thumbnial_Paranoia.jpeg" alt="alzheimer-afbeelding">
-                  <h4>Thema</h4>
-                  <footer>
-                      <p>Titel</p>
-                      <p>Auteur</p>
-                      <p>Beoordeling</p>
-                  </footer>
-                </a>
-            </article>
-            <article>
-                <a>
-                  <img src="img/Thumbnail_Dromerig.png" alt="alzheimer-afbeelding">
-                  <h4>Thema</h4>
-                  <footer>
-                      <p>Titel</p>
-                      <p>Auteur</p>
-                      <p>Beoordeling</p>
-                  </footer>
-                </a>
-            </article>
+          <article>
+              <a>
+                <img src="img/Thumbnail_Ahlzheimer.png" alt="alzheimer-afbeelding">
+                <h4>Thema</h4>
+                <footer>
+                    <p>Alzheimer</p>
+                    <p>Max J. Molovich</p>
+                    <p>Beoordeling</p>
+                </footer>
+              </a>
+          </article>
+          <article>
+              <a>
+                <img src="img/Thumbnail_Verliefd.jpeg" alt="alzheimer-afbeelding">
+                <h4>Thema</h4>
+                <footer>
+                    <p>Verliefd</p>
+                    <p>Max J. Molovich</p>
+                    <p>Beoordeling</p>
+                </footer>
+              </a>
+          </article>
+          <article>
+              <a>
+                <img src="img/Thumbnial_Paranoia.jpeg" alt="alzheimer-afbeelding">
+                <h4>Thema</h4>
+                <footer>
+                    <p>Paranoia</p>
+                    <p>Max J. Molovich</p>
+                    <p>Beoordeling</p>
+                </footer>
+              </a>
+          </article>
+          <article>
+              <a>
+                <img src="img/Thumbnail_Dromerig.png" alt="alzheimer-afbeelding">
+                <h4>Thema</h4>
+                <footer>
+                    <p>Dromerig</p>
+                    <p>Max J. Molovich</p>
+                    <p>Beoordeling</p>
+                </footer>
+              </a>
+          </article>
       </section>
       <section class="verhalen">
           <h2>Bundels</h2>
           <article>
               <a>
-                <img src="img/Thumbnail_Ahlzheimer.png" alt="alzheimer-afbeelding">
+                <img src="img/Thumbnial_Paranoia.jpeg" alt="alzheimer-afbeelding">
                 <h4>Thema</h4>
                 <footer>
-                    <p>Titel</p>
-                    <p>Auteur</p>
+                    <p>Paranoia</p>
+                    <p>Max J. Molovich</p>
+                    <p>Beoordeling</p>
+                </footer>
+              </a>
+          </article>
+          <article>
+              <a>
+                <img src="img/Thumbnail_Dromerig.png" alt="alzheimer-afbeelding">
+                <h4>Thema</h4>
+                <footer>
+                    <p>Dromerig</p>
+                    <p>Max J. Molovich</p>
+                    <p>Beoordeling</p>
+                </footer>
+              </a>
+          </article>
+          <article>
+              <a>
+                <img src="img/Thumbnail_Verliefd.jpeg" alt="alzheimer-afbeelding">
+                <h4>Thema</h4>
+                <footer>
+                    <p>Verliefd</p>
+                    <p>Max J. Molovich</p>
                     <p>Beoordeling</p>
                 </footer>
               </a>
@@ -146,30 +172,8 @@
                 <img src="img/Thumbnail_Ahlzheimer.png" alt="alzheimer-afbeelding">
                 <h4>Thema</h4>
                 <footer>
-                    <p>Titel</p>
-                    <p>Auteur</p>
-                    <p>Beoordeling</p>
-                </footer>
-              </a>
-          </article>
-          <article>
-              <a>
-                <img src="img/Thumbnail_Ahlzheimer.png" alt="alzheimer-afbeelding">
-                <h4>Thema</h4>
-                <footer>
-                    <p>Titel</p>
-                    <p>Auteur</p>
-                    <p>Beoordeling</p>
-                </footer>
-              </a>
-          </article>
-          <article>
-              <a>
-                <img src="img/Thumbnail_Ahlzheimer.png" alt="alzheimer-afbeelding">
-                <h4>Thema</h4>
-                <footer>
-                    <p>Titel</p>
-                    <p>Auteur</p>
+                    <p>Alzheimer</p>
+                    <p>Max J. Molovich</p>
                     <p>Beoordeling</p>
                 </footer>
               </a>

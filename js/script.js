@@ -1,20 +1,19 @@
-/*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
-/*eslint-env browser*/
-/*eslint 'no-console': 0*/
+var btn = document.querySelector('#filterBtn');
+var form = document.querySelector('#filterForm');
+var filtersZichtbaar = false;
+console.log(filtersZichtbaar);
 
-$(document).ready(function(){
+function btnSwitch() {
+  console.log(form)
+   if (filtersZichtbaar == true) {
+     form.classList.add('FilterOn');
+     form.classList.remove('FilterOff');
+     filtersZichtbaar = false;
+   } else {
+     form.classList.add('FilterOff');
+     form.classList.remove('FilterOn');
+     filtersZichtbaar = true;
+   }
+}
 
-   $("#filterButton").on("click", function(){
-      $("#filterLaag").slideToggle();
-   });
-    
-    $("#searchButton").on("click", function(){
-      $("#searchField").animate({
-          width:"toggle"},"swing" 
-    );
-   });
-
-});
-
-
-
+btn.addEventListener('click', btnSwitch);
