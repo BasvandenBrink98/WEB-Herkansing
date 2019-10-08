@@ -14,11 +14,8 @@ function btnSwitch() {
      verhalen.classList.remove('StoriesHigh');
      btn.classList.add('btnActive');
      btn.classList.remove('btnInactive');
+     btn.innerHTML = "sluit";
      console.log("test")
-     // filterSection.classList.add('formGrid');
-     // var h2 = document.createElement('h2');
-     // h2.textContent = 'Vind jouw perfecte match';
-     // filterSection.appendChild(h2);
      filtersZichtbaar = false;
    } else {
      form.classList.add('FilterOff');
@@ -27,8 +24,7 @@ function btnSwitch() {
      verhalen.classList.remove('StoriesLow');
      btn.classList.add('btnInctive');
      btn.classList.remove('btnActive');
-     // filterSection.classList.remove('formGrid');
-     // filterSection.removeChild(h2);
+     btn.innerHTML = "filteren";
      filtersZichtbaar = true;
    }
 }

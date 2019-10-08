@@ -47,10 +47,14 @@
         </nav>
     </header>
     <main>
-      <section id="filterSection" class="formGrid">
+      <section id="filterSection">
         <button id="filterBtn">filteren</button>
         <form id="filterForm" class="FilterOff">
+            <h3>Vind jouw perfecte match</h3>
             <fieldset>
+                <legend>
+                    Zoek op
+                </legend>
                 <label for="losseVerhalen">Losse verhalen</label>
                 <input id="losseVerhalen" type="checkbox">
                 <label for="bundels">Bundels</label>
@@ -60,22 +64,32 @@
                 <legend>
                     Thema's
                 </legend>
-                <label for="roman">Roman</label>
-                <input id="roman" type="checkbox">
-                <label for="biografisch">Biografisch</label>
-                <input id="biografisch" type="checkbox">
-                <label for="jeugd">Jeugd</label>
-                <input id="jeugd" type="checkbox">
-                <label for="thriller">Thriller</label>
-                <input id="thriller" type="checkbox">
-                <label for="avontuur">Avontuur</label>
-                <input id="avontuur" type="checkbox">
-                <label for="fantasie">Fantasie</label>
-                <input id="fantasie" type="checkbox">
-                <label for="humor">Humor</label>
-                <input id="humor" type="checkbox">
-                <label for="concept">Concept</label>
-                <input id="concept" type="checkbox">
+                <div>
+                <label for="roman">
+                  <input id="roman" type="checkbox">Roman
+                </label>
+                <label for="biografisch">
+                  <input id="biografisch" type="checkbox">Biografisch
+                </label>
+                <label for="jeugd">
+                  <input id="jeugd" type="checkbox">Jeugd
+                </label>
+                <label for="thriller">
+                  <input id="thriller" type="checkbox">Thriller
+                </label>
+                <label for="avontuur">
+                  <input id="avontuur" type="checkbox">Avontuur
+                </label>
+                <label for="fantasie">
+                  <input id="fantasie" type="checkbox">Fantasie
+                </label>
+                <label for="humor">
+                  <input id="humor" type="checkbox">Humor
+                </label>
+                <label for="concept">
+                  <input id="concept" type="checkbox">Concept
+                </label>
+              </div>
             </fieldset>
             <fieldset>
                 <legend>Leestijd</legend>
@@ -83,6 +97,7 @@
                 <input id="leestijdSleder" type="range" min="1" max="8">
             </fieldset>
             <button id="resultaten">Bekijk resultaten</button>
+            <img src="img/DFDSIconCut.svg" alt="">
         </form>
       </section>
       <section class="StoriesHigh" id="verhalen">
