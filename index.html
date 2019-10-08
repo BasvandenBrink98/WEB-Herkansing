@@ -47,9 +47,9 @@
         </nav>
     </header>
     <main>
-      <section id="filteren">
+      <section id="filterSection" class="formGrid">
         <button id="filterBtn">filteren</button>
-        <form id="filterForm">
+        <form id="filterForm" class="FilterOff">
             <fieldset>
                 <label for="losseVerhalen">Losse verhalen</label>
                 <input id="losseVerhalen" type="checkbox">
@@ -82,13 +82,13 @@
                 <label id="leestijdSlider">Aantal minuten</label>
                 <input id="leestijdSleder" type="range" min="1" max="8">
             </fieldset>
-            <button>Bekijk resultaten</button>
+            <button id="resultaten">Bekijk resultaten</button>
         </form>
       </section>
-      <section class="verhalen">
+      <section class="StoriesHigh" id="verhalen">
           <h2>Losse verhalen</h2>
           <article>
-              <a>
+              <a href="verhaal.html">
                 <img src="img/Thumbnail_Ahlzheimer.png" alt="alzheimer-afbeelding">
                 <h4>Thema</h4>
                 <footer>
@@ -132,7 +132,7 @@
               </a>
           </article>
       </section>
-      <section class="verhalen">
+      <section>
           <h2>Bundels</h2>
           <article>
               <a>
@@ -180,7 +180,7 @@
           </article>
       </section>
     </main>
-    <button>Verras me</button>
+    <button id="randomBtn">Verras me</button>
 
     <script src="js/script.js"></script>
 

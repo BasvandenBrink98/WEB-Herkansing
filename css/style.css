@@ -1,16 +1,16 @@
-
-
 @font-face {
-  font-family: DFDS;
-  src: url(fonts/DFDS-Bold.ttf);
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: DFDS-light;
-  src: url(fonts/dfds-light.ttf);
+  font-family: "DFDS";
+  src: url("fonts/DFDS-Light.woff2") format("woff2");
   font-weight: normal;
 }
+
+/* 
+@font-face {
+  font-family: "DFDS";
+  src: url("fonts/DFDS-Bold.woff") format("woff");
+  /* font-weight: bold; */
+} */
+
 
 html{
   font-size: 14px;
@@ -105,10 +105,11 @@ header > a:hover{
 }
 
 
+
 /* Navigation */
 nav{
   grid-column: 1 / 4;
-  grid-row: 2 / 2;
+  grid-row: 2 / 3;
   background-color: white;
   margin-top: 0em;
   border-top: solid 1.5px #eaedee;
@@ -189,21 +190,117 @@ li img:nth-of-type(1){
 
 
 /* Main */
-button:nth-of-type(1){
+a{
+  text-decoration: none;
+}
+
+.formGrid{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+  height: 20em;
 
 }
 
+button:nth-of-type(1){
+  width: 4em;
+  height: 2em;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: right;
+  margin-top: 1em;
+  margin-right: 3em;
+  background-color: #FFF;
+}
+
+fieldset{
+  justify-self: center;
+  margin: 1em 0;
+  color: #FFF;
+  border: 0;
+}
+
+fieldset:nth-of-type(1){
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+fieldset:nth-of-type(2){
+  grid-column: 2/3;
+  grid-row: 3/4;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; */
+}
+
+fieldset:nth-of-type(3){
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+/* #roman{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#biografisch{
+  grid-column: 2/3;
+  grid-row: 1/2;
+} */
+
+#resultaten{
+  grid-column: 2/3;
+  grid-row: 5/6;
+  align-self: center;
+  justify-self: center;
+  width: 12em;
+  height: 3em;
+  margin: 2em 0 0 0;
+  background-color: #F6861F;
+  font-family: DFDS;
+  font-style: bold;
+  color: #FFF;
+  font-size: 1.5em;
+  text-transform: uppercase;
+
+
+}
+
+/*Filter toggle classes*/
 .FilterOn{
   visibility: visible;
   opacity: 1;
-  transition: all 1s;
+  transition: all 0.3s;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+  height: 20em;
+  background-color:#002B45;
+  /* background-image: url('../img/DFDS_BG_logo.png');
+  background-size: 3em; */
 }
 
 .FilterOff{
   visibility: hidden;
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.3s;
 }
+
+.StoriesHigh{
+  margin-top: -15em;
+  transition: all 0.5s;
+}
+
+.StoriesLow{
+  margin-top: 0;
+  transition: all 0.5s;
+}
+
+.btnActive{
+  background-color: #F6861F;
+}
+
+/*End filter toggle classes*/
 
 h2{
   font-family: DFDS;
@@ -219,7 +316,7 @@ h2{
 
 
 /* Verhalen overzicht */
-.verhalen{
+section:nth-of-type(2), section:nth-of-type(3){
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
@@ -292,8 +389,8 @@ h4{
 }
 
 p{
-  font-family: DFDS-light;
-  font-weight: normal;
+  font-family: "DFDS";
+  font-weight: 100;
   font-size: 1em;
 }
 
@@ -323,7 +420,7 @@ button:nth-of-type(2){
   font-weight: normal;
   color: #FFF;
   font-size: 1.8em;
-  text-transform:uppercase;
+  text-transform: uppercase;
   background-color: #F6861F;
   border: none;
   width: 8em;
@@ -333,6 +430,100 @@ button:nth-of-type(2){
   left: 50%;
   transform: translate(-50%, 0px);
   box-shadow: 3px 3px 14px 0px rgba(133,131,133,1);
+}
+
+/*Detail pagina (verhaal)*/
+#headerVerhaal{
+  height: 4em;
+}
+
+#mainVerhaal{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8fr;
+  margin-top: 3.2em;
+  height: 729em;
+  background-image: url('../img/BGletters.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#verhaalTitel{
+  width: 25vw;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: top;
+  padding-top: 5em;
+}
+
+#verhaalUl{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.verhaalLi:nth-of-type(1){
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+}
+
+.verhaalLi:nth-of-type(2){
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.verhaalLi:nth-of-type(3){
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.verhaalLi:nth-of-type(4){
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.verhaalLi:nth-of-type(5){
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.verhaalLi:nth-of-type(6){
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+
+.verhaalLi:nth-of-type(7){
+  grid-column: 1/2;
+  grid-row: 7/8;
+}
+
+.verhaalLi:nth-of-type(8){
+  grid-column: 1/2;
+  grid-row: 8/9;
+}
+
+.verhaalLi:nth-of-type(9){
+  grid-column: 1/2;
+  grid-row: 9/10;
+}
+
+#randomBtn{
+  display: block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 10em;
+  height: 2em;
+  font-family: DFDS;
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #FFF;
+  background-color: #F6861F;
+  margin-bottom: 1em;
 }
 
 /*Klein formaat*/
@@ -360,7 +551,7 @@ button:nth-of-type(2){
 
 
   /*Main*/
-  .verhalen{
+  section:nth-of-type(2), section:nth-of-type(3){
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -407,12 +598,12 @@ button:nth-of-type(2){
 @media screen and (min-width: 900px) {
 
   /*Main*/
-  .verhalen{
+  section:nth-of-type(2), section:nth-of-type(3){
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-row-gap: 2em;
+    grid-row-gap: 1.5em;
     grid-column-gap: 1em;
   }
 
@@ -434,5 +625,9 @@ button:nth-of-type(2){
   article:nth-of-type(4){
     grid-column: 1/2;
     justify-self: right;
+  }
+
+  article a{
+    width: 23em;
   }
 }
