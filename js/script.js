@@ -12,18 +12,13 @@ function btnSwitch() {
      form.classList.remove('FilterOff');
      verhalen.classList.add('StoriesLow');
      verhalen.classList.remove('StoriesHigh');
-     btn.classList.add('btnActive');
-     btn.classList.remove('btnInactive');
      btn.innerHTML = "sluit";
-     console.log("test")
      filtersZichtbaar = false;
    } else {
      form.classList.add('FilterOff');
      form.classList.remove('FilterOn');
      verhalen.classList.add('StoriesHigh');
      verhalen.classList.remove('StoriesLow');
-     btn.classList.add('btnInctive');
-     btn.classList.remove('btnActive');
      btn.innerHTML = "filteren";
      filtersZichtbaar = true;
    }
