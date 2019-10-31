@@ -1061,7 +1061,7 @@ button:nth-of-type(2){
 @media screen and (min-width: 1340px) {
   /*Header*/
   #logo{
-    padding: 1em 1em 1em 11.5em;
+    padding: 1em 1em 1em 12.5em;
   }
 
   header a{
@@ -1089,7 +1089,7 @@ button:nth-of-type(2){
 
   /*Main*/
   #filterBtn{
-    margin-right: 11.5em;
+    margin-right: 13em;
     margin-top: 1em;
   }
 
@@ -1112,13 +1112,12 @@ button:nth-of-type(2){
   }
 
   article a img{
-    width: 31em;
-    margin-left: -1.5em;
+    width: 33em;
   }
 
   article a footer img{
     width: 8em;
-    padding-left: 3.5em;
+    padding-left: 2em;
   }
 
   #verhalen article:nth-of-type(1){
@@ -1132,8 +1131,8 @@ button:nth-of-type(2){
   }
 
   #verhalen article:nth-of-type(1) a img{
-    width: 60em;
-    margin-left: -1em;
+    width: 67em;
+    margin: -1em 0 0 -1em;
   }
 
   #verhalen article:nth-of-type(1) footer{
@@ -1199,7 +1198,7 @@ button:nth-of-type(2){
 
   article:nth-of-type(8) a{
     display: block;
-    margin-left: 2.25em;
+    margin-left: 3.25em;
     padding-top: 0.5em;
     width: 11em;
     height: 2em;
