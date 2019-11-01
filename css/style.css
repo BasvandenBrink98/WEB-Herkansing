@@ -1259,6 +1259,44 @@ button:nth-of-type(2){
   #mainVerhaal{
     height: 810em;
   }
+
+  /*Verhaal*/
+
+  .verhaalTxt:nth-of-type(1){
+    margin-top: 40em;
+  }
+
+  .verhaalTxt:nth-of-type(2){
+    margin-top: 36em;
+  }
+
+  .verhaalTxt:nth-of-type(3){
+    margin-top: 48em;
+  }
+
+  .verhaalTxt:nth-of-type(4){
+    margin-top: 62.5em;
+  }
+
+  .verhaalTxt:nth-of-type(5){
+    margin-top: 25em;
+  }
+
+  .verhaalTxt:nth-of-type(6){
+    margin-top: 28em;
+  }
+
+  .verhaalTxt:nth-of-type(7){
+    margin-top: 37.5em;
+  }
+
+  .verhaalTxt:nth-of-type(8){
+    margin-top: 37.5em;
+  }
+
+  .verhaalTxt:nth-of-type(9){
+    margin-top: 43.5em;
+  }
 }
 
 /*Bronnen:
