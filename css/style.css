@@ -1061,7 +1061,7 @@ button:nth-of-type(2){
 @media screen and (min-width: 1340px) {
   /*Header*/
   #logo{
-    padding: 1em 1em 1em 12.5em;
+    padding: 1em 1em 1em 10.5em;
   }
 
   header a{
@@ -1089,7 +1089,7 @@ button:nth-of-type(2){
 
   /*Main*/
   #filterBtn{
-    margin-right: 13em;
+    margin-right: 11em;
     margin-top: 1em;
   }
 
@@ -1256,11 +1256,18 @@ button:nth-of-type(2){
 }
 
 @media screen and (min-width: 1600px) {
-  #mainVerhaal{
-    height: 810em;
+  #logo{
+    padding: 1em 1em 1em 12.5em;
+  }
+
+  #filterBtn{
+    margin-right: 13em;
   }
 
   /*Verhaal*/
+  #mainVerhaal{
+    height: 810em;
+  }
 
   .verhaalTxt:nth-of-type(1){
     margin-top: 40em;
